@@ -7,12 +7,15 @@ const cors = require('cors');
 const compression = require('compression');
 const nodeCache = require('node-cache');
 
-const cache = new nodeCache();
+//Calling constructors
 
+const cache = new nodeCache();
 const app = express()
+const compress = new compression();
+
 app.use(bodyparser.json({limit: '100mb'}));
 app.use(cors());
-app.use(compression());
+app.use(compress);
 
 app.get('/', (req, res) => {
     res.send("API running")
