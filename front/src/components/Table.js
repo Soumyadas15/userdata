@@ -7,6 +7,8 @@ export default function Table() {
   
   const [users, setUsers] = useState([]);
   const [selectedTable, setSelectedTable] = useState('Table 1');
+  const [currentPage, setCurrentPage] = useState(1);
+  const [usersPerPage] = useState(10);
 
   //Fetching from API
 
@@ -124,7 +126,12 @@ switch (selectedTable) {
   default:
       tableHeader = <span>Top 10 cities with the highest users and their average income</span>
 }
-  
+
+const indexOfLastUser = currentPage * usersPerPage;
+const indexOfFirstUser = indexOfLastUser - usersPerPage;
+const currentUsers = filteredUsers.slice(indexOfFirstUser, indexOfLastUser);
+
+const paginate = (pageNumber) => setCurrentPage(pageNumber);
 //Rendering out content
 
 
@@ -211,4 +218,5 @@ return (
   </div>
   );
 }
+
 
