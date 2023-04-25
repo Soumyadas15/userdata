@@ -1,4 +1,4 @@
-.dropdown {
+.dropdown{
     position: relative;
     display: inline-block;
     gap: 1rem;
@@ -6,54 +6,54 @@
     font-size: 2rem;
     padding-right: 1rem;
     margin-top: 2rem;
-  }
-  .dropdown-text{
+}
+.dropdown-text{
     color: white
-  }
+}
   
-  .dropdown-select {
-    padding: 10px;
+.dropdown-select{
+    padding: 1rem;
+    margin-left: 1rem;
     font-size: 16px;
     font-weight: bold;
-    color: #444;
-    background-color: #fff;
-    border: 1px solid #bbb;
-    border-radius: 5px;
+    color: #000000;
+    background-color: rgb(0, 255, 179);
+    border: none;
+    border-radius: 4rem;
     font-size: 2rem;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-  }
+}
+.dropdown-select:hover{
+  padding: 1rem;
+  margin-left: 1rem;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000000;
+  background-color: rgb(71, 187, 153);
+  font-size: 2rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
   
-  .dropdown-select:hover, .dropdown-select:focus {
+.dropdown-select:hover, .dropdown-select:focus{
     outline: none;
     border-color: #888;
-  }
+}
   
-  .dropdown-select option {
+.dropdown-select option{
     padding: 10px;
     font-size: 16px;
     font-weight: bold;
     color: #444;
     background-color: #fff;
-  }
+}
   
-  .dropdown-select option:checked {
-    background-color: #ddd;
-  }
+
   
-  .dropdown-select::after {
-    content: "\25BC";
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-    font-size: 20px;
-    color: #888;
-    pointer-events: none;
-  }
-  
-  .dropdown-select:hover::after {
-    color: #555;
-  }
+.dropdown-select:hover::after {
+  color: #555;
+}
   
