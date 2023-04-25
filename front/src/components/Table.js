@@ -9,7 +9,7 @@ export default function Table() {
   const [selectedTable, setSelectedTable] = useState('Table 1');
 
   useEffect(() => {
-    axios.get('https://userdata-qqlp.onrender.com')
+    axios.get('https://userdata-qqlp.onrender.com/users')
       .then(response => {
         setUsers(response.data);
       })
