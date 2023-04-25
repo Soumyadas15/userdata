@@ -11,7 +11,7 @@ export default function Table() {
   //Fetching from API
 
   useEffect(() => {
-    axios.get('https://userdata-qqlp.onrender.com/users')
+    axios.get('http://localhost:5000/users')
       .then(response => {
         setUsers(response.data);
       })
