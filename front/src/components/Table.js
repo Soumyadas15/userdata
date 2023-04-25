@@ -169,7 +169,6 @@ export default function Table() {
           </tr>
         </thead>
 
-
         <tbody>
         {selectedTable === "Table 5" ? (
         <>
@@ -205,7 +204,6 @@ export default function Table() {
         </>
       )}
         </tbody>
-
 
       </table>
     </div>
