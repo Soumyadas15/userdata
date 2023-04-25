@@ -1,0 +1,90 @@
+.table{
+    min-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+h1{
+    color: white;
+    padding: 2rem;
+    font-size: 4rem;
+    margin-top: -2rem;
+}
+.span-style{
+    color: rgb(0, 255, 179);
+}
+
+.table-container{
+   
+    max-width: 100%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: -5rem;
+    padding: 5rem; 
+    padding-bottom: 10rem;
+    overflow-x: auto;
+}
+.table-header{
+    background: rgb(0, 255, 179);
+}
+thead{
+    font-size: 2rem;
+}
+tbody{
+    font-size: 2rem;
+    color: rgb(216, 216, 216);
+}
+.table-data{
+    padding: 1.8rem;
+}
+.table-row:nth-of-type(even){
+    background: #535353;
+}
+.table-row:nth-of-type(odd){
+    background: #2d2d2d;
+}
+.table-row:hover .card{
+    display: block;
+    transform: translateY(0);
+}
+.table-row:hover .card:before{
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    transform: translateX(-50%);
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent rgba(255, 255, 255, 0.8) transparent;
+}
+.table-row .table-data.name{
+    font-weight: bold;
+}
+.table-data.name:hover + .user-details .card{
+    top: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%);
+}
+.card{
+    display: none;
+    position: absolute;
+    left: 20%;
+    margin-top: 5rem;
+    height: auto;
+    width: auto;
+    background: rgba(0, 255, 170, 0.605);
+    border-radius: 12px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    z-index: 1;
+    font-size: 2rem;
+    transition: all 0.3s ease-in-out;
+    color: rgb(255, 255, 255);
+    transform: translateY(10px);
+}
+.card span{
+    font-weight: bold;
+}
+
+

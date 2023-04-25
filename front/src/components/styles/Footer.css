@@ -1,0 +1,16 @@
+.footer-container{
+    width: 100%;
+    background-color: rgb(2, 2, 2);
+    height: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-container h1{
+    font-size: 3rem;
+    font-weight: lighter;
+}
+.footer-container h1 span{
+    font-size: 3rem;
+    font-weight: bold;
+}
